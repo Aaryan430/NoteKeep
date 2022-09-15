@@ -11,6 +11,7 @@ const Signup = (props) => {
         event.preventDefault();
         if(credentials.password !== credentials.confirmpassword){
             props.showAlert("Please confirm your password correctly","danger")
+            // eslint-disable-next-line
             json.success = false;
         }
         
